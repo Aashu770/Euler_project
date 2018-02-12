@@ -1,0 +1,10 @@
+def problem_6():
+    square=0
+    j=0
+    whole_squared=0
+    for i in range(1,101):
+        square=square+i**2
+        j=j+i
+    whole_squared=j**2
+    
+    return whole_squared-square
