@@ -1,0 +1,12 @@
+def fibonaci():
+    f=0
+    s=1
+    j=1
+    k=0
+    while (s<4000000):
+        f=s+j
+        s=j
+        j=f
+        if (f%2==0):
+            k=k+f
+    return k
