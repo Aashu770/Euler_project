@@ -1,0 +1,8 @@
+def problem_4():
+    D=range(999,99,-1)
+    for i in range(998000,0,-1):
+        s=str(i)
+        if s==s[::-1]:
+            for t in D:
+                if not i % t and len(str(i/t))==3:
+                    return s
