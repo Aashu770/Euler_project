@@ -1,0 +1,8 @@
+def problem_9():
+    for i in range(3,1000):
+        for j in range (i+1,999):
+            square=i**2+j**2
+            c=square**0.5
+            if i+j+c==1000:
+                return i*j*c
+                break
